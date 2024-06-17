@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom keyframes for animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying the keyframe animation to the section */
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Custom transition for the button */
+.transition-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.transition-btn:hover {
+    transform: scale(1.05);
+}
